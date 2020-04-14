@@ -2,4 +2,5 @@
 * Pagination
 * Update Profile Info
 * See all post by a user 
-![](Screenshots/Webp.net-resizeimage.png | width=100)
+<img src="Screenshots/Webp.net-resizeimage.png" width=300>
+<img src="Screenshots/1.png" width=300>
