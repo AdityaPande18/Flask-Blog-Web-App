@@ -3,4 +3,10 @@
 * Update Profile Info
 * See all post by a user 
 
-<img src="Screenshots/Webp.net-resizeimage.png" width=300>|<img src="Screenshots/1.png" width=300>
+![](Screenshots/1.png)
+![](Screenshots/2.png)
+![](Screenshots/3.png)
+![](Screenshots/4.png)
+![](Screenshots/5.png)
+![](Screenshots/6.png)
+![](Screenshots/7.png)
