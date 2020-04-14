@@ -10,7 +10,9 @@
 ![](Screenshots/4.png)
 ### Post by Particular User
 ![](Screenshots/3.png)
-### 
+### Update Profile
 ![](Screenshots/5.png)
+### Post New Blog
 ![](Screenshots/6.png)
+### Pagination
 ![](Screenshots/7.png)
