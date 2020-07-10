@@ -20,3 +20,5 @@
 ![](Screenshots/3.png)
 ### Custom Error Page
 ![](Screenshots/9.png)
+### Custom Error Page
+![](Screenshots/10.png)
