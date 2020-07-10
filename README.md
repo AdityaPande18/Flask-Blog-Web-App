@@ -3,7 +3,7 @@
 * Update Profile Info
 * See all post by a user 
 ### Home Page
-![](Screenshots/1.png)
+![](Screenshots/AccountPage.png)
 ### Registration Page
 ![](Screenshots/2.png)
 ### Login Page
