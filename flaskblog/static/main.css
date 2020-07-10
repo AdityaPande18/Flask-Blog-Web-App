@@ -1,0 +1,105 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  background-color: #F5F5F5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #E3E2E3;
+}
+
+.content-section {
+  background: #f9f9f9;
+  padding: 10px 20px;
+  border: 1px solid #C0C0C0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 5px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #d6d4d4
+}
+
+.article-comments {
+  padding-top: 1px;
+  margin-top: 4px;
+  border-top: 1px solid #d6d4d4
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.navbar{
+  background-color: #283E4A !important;
+}
+
+.btn{
+  background-color: #283E4A !important; 
+  color: #ffffff !important;
+} 
+
+.btn.btn-danger{
+  background-color: #d33532 !important; 
+  color: #ffffff !important;
+}
+
+.btn.current_page{
+  background-color: #fff !important; 
+  border: 1px solid #283E4A !important;
+  color: #000 !important;
+}
+
+#comments-btn{
+  background-color: transparent;
+  border: none;
+}
+#comments-btn:hover {
+  background-color: transparent;
+  color: rgba(0,0,0,.6);
+}
