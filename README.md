@@ -2,6 +2,7 @@
 * Pagination
 * Update Profile Info
 * See all post by a user 
+* Custom Error Pages
 ### Home Page
 ![](Screenshots/1.png)
 ### Registration Page
