@@ -1,28 +1,39 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1 class="mb-3">Posts by {{ user.username }} ({{ posts.total }})</h1>
+    {% if user.email == current_user.email %}
+      <h1 class="mb-3">Your Posts</h1>
+    {% else%}
+      <h1 class="mb-3">Posts by {{ user.username }} ({{ posts.total }})</h1>
+    {% endif %}
     {% for post in posts.items %}
-        <article class="media content-section">
-          <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
+        <article class="media content-section shadow">
           <div class="media-body">
             <div class="article-metadata">
+              <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}"  >
               <a class="mr-2" href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
               <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
+            <div class="article-comments">
+              <i class="far fa-thumbs-up"></i><button id="comments-btn">Like</button>
+              <i class="far fa-comments"></i><button id="comments-btn">Comments</button>
+              <i class="far fa-share-square"></i><button id="comments-btn">Share</button>
+            </div>
           </div>
         </article>
     {% endfor %}
-    {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=3) %}
-      {% if page_num %}
-        {% if posts.page == page_num %}
-          <a class="btn btn-info mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
+     <div class="text-center">
+      {% for page_num in posts.iter_pages(left_edge=2, right_edge=2) %}
+        {% if page_num %}
+          {% if page_num == posts.page %}
+            <a class="btn mb-4 btn-sm current_page" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
+          {% else %}
+            <a class="btn btn-sm mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
+          {% endif %}
         {% else %}
-          <a class="btn btn-outline-info mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
+          ...
         {% endif %}
-      {% else %}
-        ...
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div> 
 {% endblock content %}
