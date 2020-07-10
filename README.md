@@ -5,14 +5,18 @@
 ### Home Page
 ![](Screenshots/1.png)
 ### Registration Page
-![](Screenshots/2.png)
+![](Screenshots/8.png)
 ### Login Page
-![](Screenshots/4.png)
-### Post by Particular User
-![](Screenshots/3.png)
-### Update Profile
 ![](Screenshots/5.png)
-### Post New Blog
-![](Screenshots/6.png)
-### Pagination
+### Post by Particular User
 ![](Screenshots/7.png)
+### Update Profile
+![](Screenshots/1.png)
+### Post New Blog
+![](Screenshots/2.png)
+### Pagination
+![](Screenshots/6.png)
+### Error Handling
+![](Screenshots/3.png)
+### Custom Error Page
+![](Screenshots/9.png)
